@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Bases para Controles PS5 - MakerWorld</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-black text-white min-h-screen selection:bg-white selection:text-black flex flex-col justify-between font-sans antialiased">
+
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-black/90 border-b border-neutral-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-white text-black flex items-center justify-center shadow-lg shadow-white/10 font-bold">
+                    <i class="fa-solid fa-gamepad text-lg"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-extrabold tracking-tight text-white block">DualSense Hub</span>
+                    <span class="block text-xs text-neutral-400 font-semibold tracking-wider uppercase">MakerWorld Controllers Collection</span>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#catalogo" class="hidden sm:inline-flex items-center px-4 py-2 text-sm font-semibold text-neutral-300 hover:text-white transition-colors">
+                    Catálogo
+                </a>
+                <a href="#netlify-deploy" class="inline-flex items-center space-x-2 px-5 py-2.5 rounded-xl bg-white text-black hover:bg-neutral-200 font-bold text-sm transition-all shadow-lg hover:scale-[1.02]">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <span>Subir a Netlify</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative overflow-hidden pt-16 pb-20 border-b border-neutral-800">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.05),transparent_60%)]"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(255,255,255,0.03),transparent_60%)]"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto">
+                <span class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-neutral-900 text-neutral-300 border border-neutral-700 text-xs font-bold mb-6 uppercase tracking-wider shadow-sm">
+                    <i class="fa-solid fa-cube text-white"></i>
+                    <span>Colección para Mandos DualSense y DualSense Edge</span>
+                </span>
+                <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight mb-6">
+                    Las Mejores Bases para <span class="text-neutral-400 underline decoration-white decoration-2 underline-offset-8">Controles PS5</span>
+                </h1>
+                <p class="text-lg sm:text-xl text-neutral-400 mb-8 leading-relaxed">
+                    Encuentra soportes de escritorio, docks con carga, organizadores dobles y montajes de pared listos para imprimir en 3D en MakerWorld.
+                </p>
+                
+                <div class="pt-4 flex justify-center">
+                    <a href="https://makerworld.com/en/search/models?keyword=PS5+controller+stand" target="_blank" rel="noopener noreferrer" class="px-10 py-5 rounded-2xl bg-white hover:bg-neutral-200 text-black font-extrabold text-xl sm:text-2xl transition-all shadow-2xl shadow-white/10 hover:scale-105 flex items-center space-x-4 border border-white">
+                        <i class="fa-solid fa-compass text-2xl sm:text-3xl"></i>
+                        <span>Explorar modelos</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-base opacity-80"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main id="catalogo" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 flex-grow w-full text-center">
+        <div class="bg-neutral-900/60 border border-neutral-800 rounded-3xl p-8 sm:p-12 shadow-2xl backdrop-blur-sm">
+            <div class="w-20 h-20 rounded-2xl bg-white/10 text-white flex items-center justify-center text-4xl mx-auto mb-6 border border-white/20">
+                <i class="fa-solid fa-layer-group"></i>
+            </div>
+            <h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">Catálogo Completo en MakerWorld</h2>
+            <p class="text-neutral-400 text-base sm:text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
+                Accede directamente a miles de diseños 3D verificados, perfiles de impresión listos para Bambu Lab y modelos creados por la comunidad.
+            </p>
+            <a href="https://makerworld.com/en/search/models?keyword=PS5+controller+stand" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-3 px-8 py-4 rounded-xl bg-neutral-800 hover:bg-neutral-700 text-white font-bold text-lg border border-neutral-600 transition-all hover:scale-105 shadow-lg">
+                <span>Buscar en MakerWorld</span>
+                <i class="fa-solid fa-external-link-alt text-sm text-neutral-400"></i>
+            </a>
+        </div>
+    </main>
+
+    <section id="netlify-deploy" class="bg-neutral-950 border-t border-b border-neutral-800 py-20">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-white font-bold text-xs uppercase tracking-widest bg-neutral-900 px-3 py-1 rounded-full border border-neutral-700">Guía de Despliegue</span>
+                <h2 class="text-3xl font-extrabold text-white mt-4">¿Cómo subir este catálogo a Netlify gratis?</h2>
+                <p class="text-neutral-400 mt-2">Puedes tener tu catálogo publicado con tu propia dirección en un par de minutos.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Method 1: Drop -->
+                <div class="bg-black p-8 rounded-2xl border border-neutral-800 relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-12 h-12 rounded-xl bg-white/10 text-white flex items-center justify-center font-bold text-lg border border-white/20">
+                                1
+                            </div>
+                            <span class="text-xs px-2.5 py-1 rounded-md bg-neutral-900 text-neutral-300 border border-neutral-700 font-medium">Método más fácil</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Netlify Drop (Arrastrar y Soltar)</h3>
+                        <ol class="space-y-3 text-neutral-400 text-sm list-decimal list-inside">
+                            <li>Guarda este código con el nombre <code class="text-white font-mono bg-neutral-900 px-1.5 py-0.5 rounded border border-neutral-800">index.html</code>.</li>
+                            <li>Abre <a href="https://app.netlify.com/drop" target="_blank" rel="noopener noreferrer" class="text-white underline font-semibold hover:text-neutral-300">app.netlify.com/drop</a> en tu navegador.</li>
+                            <li>Arrastra el archivo <code class="text-white font-mono bg-neutral-900 px-1.5 py-0.5 rounded border border-neutral-800">index.html</code> (o la carpeta donde está guardado) dentro del área indicada.</li>
+                            <li>¡Tu catálogo estará publicado inmediatamente en la nube de Netlify!</li>
+                        </ol>
+                    </div>
+                    <div class="mt-8 pt-6 border-t border-neutral-800 text-xs text-neutral-500 flex items-center justify-between">
+                        <span>Sin registro obligatorio al inicio</span>
+                        <i class="fa-solid fa-bolt text-white"></i>
+                    </div>
+                </div>
+
+                <!-- Method 2: GitHub -->
+                <div class="bg-black p-8 rounded-2xl border border-neutral-800 relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-12 h-12 rounded-xl bg-white/10 text-white flex items-center justify-center font-bold text-lg border border-white/20">
+                                2
+                            </div>
+                            <span class="text-xs px-2.5 py-1 rounded-md bg-neutral-900 text-neutral-300 border border-neutral-700 font-medium">Sincronizado</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Conexión con GitHub</h3>
+                        <ol class="space-y-3 text-neutral-400 text-sm list-decimal list-inside">
+                            <li>Crea un repositorio en <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-white underline font-semibold">GitHub</a> y sube este archivo <code class="text-neutral-300 font-mono bg-neutral-900 px-1.5 py-0.5 rounded border border-neutral-800">index.html</code>.</li>
+                            <li>Inicia sesión en <a href="https://app.netlify.com" target="_blank" rel="noopener noreferrer" class="text-white underline font-semibold">Netlify</a>.</li>
+                            <li>Haz clic en <strong class="text-white">"Add new site"</strong> &gt; <strong class="text-white">"Import an existing project"</strong>.</li>
+                            <li>Selecciona GitHub, escoge el repositorio y haz clic en <strong class="text-white">"Deploy"</strong>.</li>
+                        </ol>
+                    </div>
+                    <div class="mt-8 pt-6 border-t border-neutral-800 text-xs text-neutral-500 flex items-center justify-between">
+                        <span>Actualizaciones automáticas</span>
+                        <i class="fa-solid fa-code-branch text-white"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black border-t border-neutral-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-lg bg-white text-black flex items-center justify-center text-xs font-bold">
+                    <i class="fa-solid fa-gamepad"></i>
+                </div>
+                <span class="text-neutral-400 text-sm font-medium">PS5 DualSense Stands Catalog &copy; 2026</span>
+            </div>
+            <p class="text-xs text-neutral-500 text-center sm:text-right">
+                Las marcas y modelos expuestos son referenciales. Puedes explorar más diseños creados por la comunidad en <a href="https://makerworld.com" target="_blank" rel="noopener noreferrer" class="text-neutral-300 underline hover:text-white">MakerWorld.com</a>.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
